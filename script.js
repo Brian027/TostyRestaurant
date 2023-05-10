@@ -1,6 +1,9 @@
 const hamburgerBtn = document.querySelector(".navMobileBtn");
-const navMobile = document.querySelector(".navigationLinkContainer");
+const navContainer = document.querySelector(".navigationLinkContainer");
 
 hamburgerBtn.addEventListener("click", () => {
-    navMobile.classList.toggle("active");
+
+    navContainer.classList.toggle("active");
+    hamburgerBtn.classList.toggle("active");
+    
 })
