@@ -497,19 +497,43 @@ body::-webkit-scrollbar-thumb {
     }
     
     #homeResto .gridContainer {
-        max-width: 800px;
+        max-width: 900px;
         width: 80%;
         height: auto;
         margin: 20px auto;
         display: grid;
         justify-content: space-between;
-        grid-template-columns: repeat(auto-fill, 350px);
-        gap: 50px;
+        grid-template-columns: repeat(auto-fill, 380px);
+        gap: 10px;
     }
     
     #homeResto .gridContainer .gridItem {
-        width: 350px;
-        height: 350px;
+        width: 380px;
+        height: 380px;
+    }
+
+    #homeResto .gridContainer .gridItem:nth-child(1) .info {
+        width: 37%;
+    }
+
+    #homeResto .gridContainer .gridItem:nth-child(1) .info h5 {
+        font-size: .9rem;
+    }
+
+    #homeResto .gridContainer .gridItem:nth-child(1) .info p {
+        font-size: .7rem;
+    }
+
+    #homeResto .gridContainer .gridItem:nth-child(2) p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    #homeResto .gridContainer .gridItem:nth-child(2) h1 {
+        font-size: 3.5rem;
+    }
+
+    #homeResto .gridContainer .gridItem:nth-child(2) p:nth-child(3) {
+        font-size: 1rem;
     }
 
 }
@@ -606,6 +630,37 @@ body::-webkit-scrollbar-thumb {
     #services .gridContainer .gridItem p {
         color: #c7c7c7;
     }
+}
+
+/* Desktop display Service Resto start */
+
+@media screen and (min-width:991px) {
+
+    #services {
+        padding: 2rem 0;
+    }
+
+    #services .gridContainer {
+        max-width: 1170px;
+        margin: 30px auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+    
+    #services .gridContainer .gridItem {
+        width: 250px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
 }
 
 /*---- About Resto style start */
@@ -711,14 +766,13 @@ body::-webkit-scrollbar-thumb {
         height: auto;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(auto-fill, 250px);
+        grid-template-columns: repeat(auto-fill, 350px);
         gap: 20px;
-        position: relative;
     }
     
     #about .gridContainer .gridItem {
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
         color: #fafafa;
         display: flex;
         flex-direction: column;
@@ -764,19 +818,19 @@ body::-webkit-scrollbar-thumb {
     }
     
     #about .gridContainer {
-        max-width: 800px;
+        max-width: 1170px;
         margin: 30px auto;
-        width: 80%;
+        width: 100%;
         height: auto;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(auto-fill, 300px);
-        gap: 20px;
+        grid-template-columns: repeat(auto-fill, 400px);
+        gap: 10px;
     }
     
     #about .gridContainer .gridItem {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         color: #fafafa;
         display: flex;
         flex-direction: column;
@@ -784,11 +838,11 @@ body::-webkit-scrollbar-thumb {
     }
 
     #about .gridContainer .gridItem:nth-child(1) h1 {
-        font-size: clamp(2rem, 2.2vw, 2.5rem);
+        font-size: 2.5rem;
     }
 
     #about .gridContainer .gridItem:nth-child(1) p {
-        font-size: clamp(.8rem, .9vw, 1rem);
+        font-size: 1rem;
     }
 
 }
@@ -819,7 +873,7 @@ body::-webkit-scrollbar-thumb {
     
     #menu .gridContainer .gridItem {
         width: 300px;
-        height: 450px;
+        height: 300px;
         color: #fafafa;
         display: flex;
         flex-direction: column;
@@ -863,6 +917,10 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
     }
 
+    #menu .gridContainer .gridItem .imgCard {
+        height: 140px;
+    }
+
     #menu .gridContainer .gridItem .produit {
         color: #fafafa;
         font-weight: 500;
@@ -879,6 +937,62 @@ body::-webkit-scrollbar-thumb {
         color: #fafafa;
         font-weight: 500;
         font-size: clamp(1rem, 1.8vw, 2rem);
+    }
+
+}
+
+/* Desktop display Menu Resto start */
+
+@media screen and (min-width:991px) {
+
+    #menu {
+        padding: 5rem 0;
+    }
+
+    #menu .gridContainer {
+        max-width: 1170px;
+        width: 100%;
+        margin: 50px auto;
+        height: auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 280px);
+        gap: 10px;
+    }
+
+    #menu .gridContainer .gridItem {
+        width: 280px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #menu .gridContainer .gridItem .imgCard {
+        height: 140px;
+    }
+
+    #menu .gridContainer .gridItem .produit {
+        color: #fafafa;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    #menu .gridContainer .gridItem .categories {
+        color: #8d8d8d;
+        font-weight: 500;
+        font-size: .5rem;
+    }
+
+    #menu .gridContainer .gridItem .price {
+        color: #fafafa;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    #menu .gridContainer .gridItem .imgCard img {
+        object-fit: cover;
     }
 
 }
