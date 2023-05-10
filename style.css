@@ -959,13 +959,13 @@ body::-webkit-scrollbar-thumb {
     }
     
     footer .gridContainer {
-        max-width: 500px;
+        max-width: 350px;
         margin: 30px auto;
         width: 80%;
         height: auto;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(auto-fill, 480px);
+        grid-template-columns: repeat(auto-fill, 300px);
         gap: 20px;
     }
     
@@ -974,7 +974,7 @@ body::-webkit-scrollbar-thumb {
     }
     
     footer .gridContainer .gridItem {
-        width: 480px;
+        width: 300px;
         height: 150px;
         color: #fafafa;
     }
